@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.animated-box {
+width: 100px;
+height: 100px;
+background-color: red;
+position: relative;
+animation-name: slide;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+animation-delay: 1s;
+
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+ @keyframes slide {
+0% { left: 0; }
+50% { left: 200px; top: 100px; background-color: blue; }
+100% { left: 0; }
+}
+
+</style>
+</head>
+<body>
+<div class="animated-box"></div>
+</body>
+</html>
+
